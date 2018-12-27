@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html> 
+	<head>
+	
+	<style> 
+		body 		<!-- اي حاجه انتا هتكررها اعملها كلاس فوق وارميه فيها وريح دماغك -->
+		{
+			background: url("web.jpg" )  ;
+			background-size: 50% 100%;
+			
+		}
+		div
+		{
+			font-family: sans-serif;		<!-- شكل الكتابه م تبع انهي عيله -->
+			padding: 0;
+			margin: 0;
+			font-size : 20px;				<!-- حجم الخط -->
+			text-align: center;				<!-- الخط اللي كتبته متسنتر ولا لا -->
+			color: red;						<!-- لون الفونت اللي بتكتب بيه -->
+			vertical-align: middle;			
+			margin-left: 90px;				<!--  هيا موجوده فين ع السكرين من ناحية الشمال -->
+			margin-right: 1150px;			<!-- هيا موجوده فين من ناحية اليمين -->
+		}
+	</style>
+	</head>
+	<body style = " background: url(web.jpg) ; background-size: 50% 150%; background-attachment: fixed ;">
+	
+	<div style='margin-top:  70px ; color: red;'> Book Title  <!-- هنا انا عامل ديف عشان ازود الحاجات اللي عايزها -->
+		<input type = "text" name = "name" id = "input1"  style ="   margin-left: 300px;	margin-top: 0px;" />
+	</div>
+	<div style=' margin-top:  30px; color: red;'> Book SubTitle
+		<input type = "text" name = "name" id = "input2"  style ="   margin-left: 265px;	margin-top: 0px;" />
+	</div>
+	<div style=' margin-top:  30px; color: red;'> Author Name 
+		<input type = "text" name = "name" id = "input3"  style ="   margin-left: 275px;	margin-top: 0px;"/>
+	</div>
+	<div style=' margin-top:  30px; color: red;'> Background Color
+		<select id = "selector1" style = "   margin-left: 265px;	margin-top: 0px; font-size: 20px">
+			<option value =  'grey'       >    grey             </option>
+			<option value =  'pink'       >    pink             </option>
+			<option value =  'green'      >    green            </option>
+			<option value =  'yellow'     >    yellow           </option>
+			<option value =  'black'      >    black            </option>
+			<option value =  'white'      >    white            </option>
+			<option value =  'blue'       >    blue             </option>
+			<option value =  'light-blue' >    light-blue       </option>
+			<option value =  'orange'     >    orange           </option>
+	</select>
+	</div>
+	<div style='margin-top:  30px; color: red;'> publisher
+		<input type = "text" name = "name" id = "input5"  style ="   margin-left: 315px;	margin-top: 0px;"/>
+	</div>
+	<div  style=' margin-top:  30px; color: red;' > publishing year
+	
+	<select id = "selector" style ="   margin-left: 300px;	margin-top: 0px; font-size: 20px">
+	<option value = '2000' > 2000 </option>
+	<option value = '2001' > 2001 </option>
+	<option value = '2002' > 2002 </option>
+	<option value = '2003' > 2003 </option>
+	<option value = '2004' > 2004 </option>
+	<option value = '2005' > 2005 </option>
+	<option value = '2006' > 2006 </option>
+	<option value = '2007' > 2007 </option>
+	<option value = '2008' > 2008 </option>
+	<option value = '2009' > 2009 </option>
+	<option value = '2010' > 2010 </option>
+	<option value = '2011' > 2011 </option>
+	<option value = '2012' > 2012 </option>
+	<option value = '2013' > 2013 </option>
+	<option value = '2014' > 2014 </option>
+	<option value = '2015' > 2015 </option>
+	<option value = '2016' > 2016 </option>
+	<option value = '2017' > 2017 </option>
+	<option value = '2018' > 2018 </option>
+	</select>
+	</div>
+	
+	<button onclick="myJsFunction()" style =" font-size: 30px ; color: red; background-color: #383838; border:#383838; margin-left: 300px; margin-top: 30px"> Generate </button>
+	<script type="text/javascript">
+		function myJsFunction(){
+			var text1=document.getElementById('input1').value;
+			if ( text1 != "" ){
+			document.getElementById("demo1").innerHTML = "Book Title: " + text1;}
+			
+			var text2=document.getElementById('input2').value;
+			if ( text1 != "" ){
+			document.getElementById("demo2").innerHTML = "Book SubTitle: " + text2;}
+			
+			var text3=document.getElementById('input3').value;
+			if ( text1 != "" ){
+			document.getElementById("demo3").innerHTML = "Author Name: " + text3;}
+				
+			var text4=document.getElementById('selector1').value;
+			if (text4 == "pink"){
+				document.body.style.background = "pink ";}
+			else if(text4 == "grey"){
+				document.body.style.background = "grey no-repeat ";
+			}
+			else if(text4 == "green"){
+				document.body.style.background = "green no-repeat ";
+			}
+			else if(text4 == "yellow"){
+				document.body.style.background = "yellow no-repeat ";
+			}
+			else if(text4 == "black"){
+				document.body.style.background = "black no-repeat ";
+			}
+			else if(text4 == "white"){
+				document.body.style.background = "white no-repeat ";
+			}
+			else if(text4 == "blue"){
+				document.body.style.background = "blue no-repeat ";
+			}
+			else if(text4 == "light-blue"){
+				document.body.style.background = "light-blue no-repeat ";
+			}
+			else if(text4 == "orange"){
+				document.body.style.background = "orange no-repeat ";
+			}
+			
+			var text5=document.getElementById('input5').value;
+			if ( text1 != "" ){
+			document.getElementById("demo5").innerHTML = "publisher: " + text5;}
+			
+			var text6=document.getElementById("selector").value;
+			if ( text1 != "" ){
+			document.getElementById("demo6").innerHTML = "publishing year: " + text6;}
+			}
+	</script>
+	<p id="demo1" style =" margin-left: 900px; color: red; font-size: 20px; margin-top: -350px;" >  </p>
+	<p id="demo2" style =" margin-left: 900px; color: red; font-size: 20px; margin-top: 30px;  " >  </p>
+	<p id="demo3" style =" margin-left: 900px; color: red; font-size: 20px; margin-top: 30px;  " >  </p>
+	
+	<p id="demo5" style =" margin-left: 900px; color: red; font-size: 20px; margin-top: 30px;  " >  </p>
+	<p id="demo6" style =" margin-left: 900px; color: red; font-size: 20px; margin-top: 30px;  " >  </p>
+	<!-- <table>
+		<tr>
+			<td> Book Title </td>
+		</tr>
+	</table> -->
+	</body>
+	
+
+</html>
