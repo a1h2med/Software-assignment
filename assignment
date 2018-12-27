@@ -4,7 +4,7 @@
 	<head>
 	
 	<style> 
-		body 		<!-- اي حاجه انتا هتكررها اعملها كلاس فوق وارميه فيها وريح دماغك -->
+		body 		
 		{
 			background: url("web.jpg" )  ;
 			background-size: 50% 100%;
@@ -12,21 +12,21 @@
 		}
 		div
 		{
-			font-family: sans-serif;		<!-- شكل الكتابه م تبع انهي عيله -->
+			font-family: sans-serif;		
 			padding: 0;
 			margin: 0;
-			font-size : 20px;				<!-- حجم الخط -->
-			text-align: center;				<!-- الخط اللي كتبته متسنتر ولا لا -->
-			color: red;						<!-- لون الفونت اللي بتكتب بيه -->
+			font-size : 20px;				
+			text-align: center;				
+			color: red;						
 			vertical-align: middle;			
-			margin-left: 90px;				<!--  هيا موجوده فين ع السكرين من ناحية الشمال -->
-			margin-right: 1150px;			<!-- هيا موجوده فين من ناحية اليمين -->
+			margin-left: 90px;				
+			margin-right: 1150px;			 
 		}
 	</style>
 	</head>
 	<body style = " background: url(web.jpg) ; background-size: 50% 150%; background-attachment: fixed ;">
 	
-	<div style='margin-top:  70px ; color: red;'> Book Title  <!-- هنا انا عامل ديف عشان ازود الحاجات اللي عايزها -->
+	<div style='margin-top:  70px ; color: red;'> Book Title  
 		<input type = "text" name = "name" id = "input1"  style ="   margin-left: 300px;	margin-top: 0px;" />
 	</div>
 	<div style=' margin-top:  30px; color: red;'> Book SubTitle
