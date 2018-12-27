@@ -4,7 +4,7 @@
 	<head>
 	
 	<style> 
-		body 		
+		body 		<!-- شكل بتاعه -->
 		{
 			background: url("web.jpg" )  ;
 			background-size: 50% 100%;
@@ -12,21 +12,35 @@
 		}
 		div
 		{
-			font-family: sans-serif;		
+			font-family: sans-serif;		<!-- الكتابه م تبع انهي حاجه -->
 			padding: 0;
 			margin: 0;
-			font-size : 20px;				
-			text-align: center;				
-			color: red;						
+			font-size : 20px;				<!-- حجم الخط -->
+			text-align: center;				<!-- الخط اللي كتبته متسنتر ولا لا -->
+			color: red;						<!-- لون الفونت اللي بتكتب بيه -->
 			vertical-align: middle;			
-			margin-left: 90px;				
-			margin-right: 1150px;			 
+			margin-left: 90px;				<!--  هيا موجوده فين ع السكرين من ناحية الشمال -->
+			margin-right: 1150px;			<!-- هيا موجوده فين من ناحية اليمين -->
+		}
+	<!--  	table 
+		{
+			margin-right: 1150px;
+			margin-left: 40px;
+			margin-top:  70px ;
+			text-align: center;
+			margin-right: 1150px;
+		} -->
+		input 								
+		<!-- موجود فين من الشمال -->
+		<!-- نوع الانبوت اللي انا عايزه واسم ولا نوع اهله ايه وكده -->
+		{
+			
 		}
 	</style>
 	</head>
 	<body style = " background: url(web.jpg) ; background-size: 50% 150%; background-attachment: fixed ;">
 	
-	<div style='margin-top:  70px ; color: red;'> Book Title  
+	<div style='margin-top:  70px ; color: red;'> Book Title  <!-- هنا انا عامل ديف عشان ازود الحاجات اللي عايزها -->
 		<input type = "text" name = "name" id = "input1"  style ="   margin-left: 300px;	margin-top: 0px;" />
 	</div>
 	<div style=' margin-top:  30px; color: red;'> Book SubTitle
@@ -90,10 +104,10 @@
 			var text3=document.getElementById('input3').value;
 			if ( text1 != "" ){
 			document.getElementById("demo3").innerHTML = "Author Name: " + text3;}
-				
+			
 			var text4=document.getElementById('selector1').value;
 			if (text4 == "pink"){
-				document.body.style.background = "pink ";}
+				document.body.style.background = "pink no-repeat ";}
 			else if(text4 == "grey"){
 				document.body.style.background = "grey no-repeat ";
 			}
